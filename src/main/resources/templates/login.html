@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html  xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion</title>
+   <link th:href="@{/css/login.css}" rel="stylesheet" >
+</head>
+
+<body>
+    <div class="container">
+        <div class="divLogo">
+            <div class="logo">
+                Pay My Buddy
+            </div>
+        </div>
+
+        <div class="form">
+            <form th:action="@{/login}" method="post" >
+                <div class="form-group">
+                    <input id="email" name="email" value="banounemassine@gmail.com" required autofocus="autofocus" placeholder="Email" />
+                </div>
+
+                <div class="form-group">
+                    <input id="mdp" name="mdp"  type="password" value="JSKmob1303"  required autofocus="autofocus" placeholder="Password" />
+                </div>
+
+                <div class="form-group-btn">
+                    <button type="submit" class="btn">Login</button>
+                </div>
+                     <div class="register">
+				    Vous n'aves pas de compte?
+				    <a th:href="@{/register}">Créer un compte</a>
+				</div>  
+            </form>
+         
+		     <div th:if="*{param.error}" class="error-message">
+			    <p>Invalid username or password.</p>
+			</div>
+             
+        </div>
+    </div>
+</body>
+
+</html>

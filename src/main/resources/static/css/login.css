@@ -1,0 +1,92 @@
+  
+.container {
+    position: absolute;
+    height: 70vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ABB2B9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-group input {
+    width: 320px;
+    height: 40px;
+    margin: 15px 30px;
+    border: 1px solid #ABB2B9;
+    border-radius: 5px;
+}
+
+.logo {
+    flex-grow: 1;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    margin-top: 35px;
+    padding: 10px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #1d957d, #3ae983);
+    color: #FFF;
+}
+
+.divLogo {
+    height: calc(70vh * 1/5);
+}
+
+.form {
+    flex-grow: 4;
+    width: 100%;
+}
+
+.form-group-btn {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    width: 120px;
+    
+}
+
+.btn {
+    border-radius: 3px;
+    color: #FFF;
+    border: #2980B9;
+    border-radius: 3px;
+    background-color: #2980B9;
+    padding: 10px;
+    width: 120px;
+    cursor: pointer;
+}
+.register {
+    text-align: center;
+    margin-top: 10px; 
+    font-size: 14px; 
+}
+
+.register a {
+    color: #2980B9; 
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+.register a:hover {
+    text-decoration: underline; 
+}
+
+.error-message {
+    color: red; /* Couleur du texte en rouge */
+    margin-top: 10px; /* Marge en haut pour l'espace entre le formulaire et le message d'erreur */
+    font-weight: bold; /* Texte en gras */
+    text-align: center; /* Alignement horizontal au centre */
+    padding: 10px; /* Ajoute de la marge intérieure pour un meilleur espacement */
+    border: 1px solid red; /* Ajoute une bordure rouge pour mettre en évidence le message d'erreur */
+    border-radius: 5px; /* Ajoute une bordure arrondie */
+    background-color: #ffe6e6; /* Couleur de fond légèrement teintée pour attirer l'attention */
+    /* Ajoutez d'autres styles selon vos préférences */
+}
+
+  
