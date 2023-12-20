@@ -1,0 +1,95 @@
+
+
+#container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+}
+
+#div1 {
+    padding: 20px;
+    position: relative;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.sendMoney {
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    width: 800px;
+    height: 120px;
+    padding: 15px;
+}
+
+.sendMoney form {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sendMoney select,
+.sendMoney input[type="number"] {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.sendMoney select {
+    height: 45px;
+}
+
+.sendMoney input {
+    height: 40px;
+}
+
+.sendMoney button {
+    height: 35px;
+    width: 100px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #1ea73c;
+    color: #fff;
+    cursor: pointer;
+}
+
+#div2 table {
+    border-collapse: collapse;
+    width: 830px;
+    border: 1px solid;
+    margin-bottom: 20px;
+}
+
+#div2 table th,
+#div2 table td {
+    height: 40px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    border: none;
+}
+
+#div2 table th {
+    background-color: #1ea73c;
+    color: #fff;
+}
+
+.add_connection {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    height: 35px;
+    width: 120px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #2980B9;
+    color: #fff;
+    cursor: pointer;
+
+}

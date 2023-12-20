@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html  xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+
+   <link th:href="@{/css/home.css}" rel="stylesheet" >
+   <link th:href="@{/css/menu.css}" rel="stylesheet" >
+    <title>Home</title>
+</head>
+<body>
+<header  >
+ 	<div th:replace="~{menu :: menu}"></div>
+</header>
+ <div class="containerMenu">
+    <div class="phraseAccuil">
+        <h1>PayMyBuddy - Simplifiez vos transactions financières avec aisance !</h1>
+        <p>Explorez et appréciez !</p>
+    </div>
+
+    <div class="content">
+		<p>Bienvenue, <span th:text="${nom}+' '+ ${prenom}"></span></p>
+        <p>Bienvenue sur PayMyBuddy, l'application révolutionnaire qui rend la gestion de votre argent et les paiements entre amis plus simples que jamais !</p>
+        <p> Avec PayMyBuddy, nous transformons vos interactions financières en expériences fluides et agréables.</p>
+    </div>
+</div>
+
+</body>
+</html>

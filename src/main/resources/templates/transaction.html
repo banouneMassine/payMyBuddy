@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+	<title>Transaction</title>
+	<link th:href="@{/css/transaction.css}" rel="stylesheet">
+	<link th:href="@{/css/menu.css}" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<div th:replace="~{menu :: menu}"></div>
+	</header>
+	<div id="container">
+		<div id="div1">
+			<h2>Send Money</h2>
+			<button type="submit" class="add_connection">Add connection</button>
+			<div class="sendMoney">
+				<form>
+					<select>
+						<option value="option1">Option 1</option>
+						<option value="option2">Option 2</option>
+						<option value="option3">Option 3</option>
+					</select>
+					<input type="number" min="0" step="1">
+					<button type="submit" class="btn">Envoyer</button>
+				</form>
+			</div>
+		</div>
+
+		<div id="div2">
+			<h2>My transaction</h2>
+			<table>
+				<tr>
+					<th>Connection</th>
+					<th>Description</th>
+					<th>Amount</th>
+				</tr>
+				<tr>
+					<td>Connection 1</td>
+					<td>Description 1</td>
+					<td>100</td>
+				</tr>
+				<tr>
+					<td>Connection 2</td>
+					<td>Description 2</td>
+					<td>200</td>
+				</tr>
+				<tr>
+					<td>Connection 3</td>
+					<td>Description 3</td>
+					<td>300</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+
+</html>
